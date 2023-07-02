@@ -8,13 +8,15 @@
 
 body{
     margin: 0 auto ;
-    font-family: "Poppins", sans-serif;
+
     color: #343434;
     font-weight: 400;
 }
 
 
-h1, h2, h3, h4, h5, h6, .navbar-brand {
+
+
+h1, h2, h3, h4, h5, h6 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -72,9 +74,16 @@ a{
 }
 
 .navbar-expand-lg .navbar-nav .nav-link,.navbar .navbar-brand{
-    color: #111 !important;
+    color: var(--main-color) !important ;
     font-size:14px;
     /* color:#000; */
+}
+
+.navbar .navbar-brand{
+    font-weight: 800;
+    font-size: 18px;
+    letter-spacing: 1px;
+
 }
 
 
@@ -151,7 +160,6 @@ header{
 
 }
 
-
 #home .soical-media .icon-social i{
     font-size: 14px;
     width: 35px;
@@ -159,6 +167,11 @@ header{
     /* line-height: 35px; */
     border-radius: 50%;
     background: rgba(0, 0, 0, 0.3);
+}
+
+
+header .animation{
+    margin-right: 200px;
 }
 
 
@@ -189,7 +202,6 @@ header .span::after {
 }
 
 
-
 @keyframes typing {
     
     1.5% {
@@ -197,115 +209,115 @@ header .span::after {
     }
 
     3% {
-        content: " l|";
+        content: " L|";
     }
 
     4.5% {
-        content: "la |";
+        content: "La |";
     }
 
     6% {
-        content: "lar |";
+        content: "Lar |";
     }
 
     7.5% {
-        content: "larr |";
+        content: "Larr |";
     }
 
     9% {
-        content: "larry |";
+        content: "Larry |";
     }
 
     10.5% {
-        content: "larry  |";
+        content: "Larry  |";
     }
 
     12% {
-        content: "larry d |";
+        content: "Larry D |";
     }
 
     13.5% {
-        content: "larry da |";
+        content: "Larry Da |";
     }
 
     15% {
-        content: "larry dan |";
+        content: "Larry Dan |";
     }
 
     16.5% {
-        content: "larry dani |";
+        content: "Larry Dani |";
     }
 
     17% {
-        content: "larry danie |";
+        content: "Larry Danie |";
     }
 
     18.5% {
-        content: "larry daniel |";
+        content: "Larry Daniel |";
     }
 
     20% {
-        content: "larry daniels |";
+        content: "Larry Daniels |";
     }
 
     21.5% {
-        content: "larry daniels |";
+        content: "Larry Daniels |";
     }
 
     23% {
-        content: "larry daniels |";
+        content: "Larry Daniels |";
     }
 
     24.5% {
-        content: "larry daniels |";
+        content: "Larry Daniels |";
     }
 
     26% {
-        content: "larry daniel |";
+        content: "Larry Daniel |";
     }
 
     27.5% {
-        content: "larry danie |";
+        content: "Larry Danie |";
     }
 
     29% {
-        content: "larry dani |";
+        content: "Larry Dani |";
     }
 
     30.5% {
-        content: "larry dan |";
+        content: "Larry Dan |";
     }
 
     32% {
-        content: "larry da |";
+        content: "Larry Da |";
     }
 
     33.5% {
-        content: "larry d |";
+        content: "Larry D |";
     }
 
     35% {
-        content: "larry  |";
+        content: "Larry  |";
     }
 
     36.5% {
-        content: " larry |";
+        content: " Larry |";
     }
 
     38% {
-        content: " larr |";
+        content: " Larr |";
     }
 
     39.5% {
-        content: " lar |";
+        content: " Lar |";
     }
 
     41% {
-        content: " la |";
+        content: " La |";
     }
 
     42.5% {
-        content: " l |";
+        content: " L |";
     }
 
     44% {
@@ -603,8 +615,9 @@ header .span::after {
 #portfolio{
     overflow: hidden;
 }
-#portfolio .nav-underline .nav-item{
+#portfolio .nav-underline {
     border:0;
+    /* display: flex; */
 }
 #portfolio  .nav-link{
     border: 0;
