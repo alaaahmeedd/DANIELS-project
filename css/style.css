@@ -176,14 +176,14 @@ header .animation{
 }
 
 header .static{
-    font-size: 42px;
+    font-size: 50px;
 }
 
 
 header .span::after {
     content: "";
     position: absolute;
-    font-size: 42px;
+    font-size: 40px;
     translate: 10px 0;
     padding-top: 5px;
     animation: typing 6s ease-in-out infinite;
