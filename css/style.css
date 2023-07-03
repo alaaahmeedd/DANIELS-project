@@ -16,7 +16,7 @@ body{
 
 
 
-h1, h2, h3, h4,h6 {
+h1, h2,h4,h6 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -524,12 +524,11 @@ header .span::after {
 }
 
 #about p {
-    line-height:
-24px;
+    line-height:24px;
     margin: 0;
     font-size: 16px;
     color: #748182;
-    letter-spacing: 0.4px;
+    letter-spacing: 0.1px;
     font-weight: 400;
 }
 
@@ -556,6 +555,12 @@ header .span::after {
     font-size: 13px;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
+}
+
+@media only screen and (max-width: 768px) {
+    #about .about-content{
+        margin-top: 50px;
+    }
 }
 
 /* start service */
