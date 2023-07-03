@@ -172,20 +172,20 @@ header{
 
 
 header .animation{
-    margin-right: 240px;
+    margin-right: 150px;
 }
 
 header .static{
-    font-size: 50px;
+    font-size: 40px;
 }
 
 
 header .span::after {
     content: "";
     position: absolute;
-    font-size: 40px;
+    font-size: 30px;
     translate: 10px 0;
-    padding-top: 5px;
+    padding-top: 15px;
     animation: typing 6s ease-in-out infinite;
     text-align: center;
     font-weight: 600;
