@@ -176,14 +176,14 @@ header .animation{
 }
 
 header .static{
-    font-size: 43px;
+    font-size: 42px;
 }
 
 
 header .span::after {
     content: "";
     position: absolute;
-    font-size: 43px;
+    font-size: 42px;
     translate: 10px 0;
     padding-top: 5px;
     animation: typing 6s ease-in-out infinite;
@@ -620,7 +620,8 @@ header .span::after {
 
 /* style portfolio */
 
-.work-sec h2{
+
+#works .work-sec h2{
     font-size: 40px;
     color: var(--header-font);
     position: relative;
@@ -629,7 +630,8 @@ header .span::after {
     z-index: 53;
     padding: 0 !important;
 }
-.work-sec h2::before{
+
+#works .work-sec h2::before{
     content: "";
     position: absolute;
     width: 100%;
@@ -641,16 +643,16 @@ header .span::after {
     z-index: -55;
 }
 
-.work-sec h2::after{
+#works .work-sec h2::after{
     content: ".";
 }
 
-.work-card{
+#works .work-card{
     position: relative;
    
 }
 
-.work-card .work-card-layer{
+#works .work-card .work-card-layer{
     position: absolute;
     top: 17px;
     left: 7px;
@@ -662,26 +664,26 @@ header .span::after {
     opacity: 0;
 }
 
-.work-card:hover .work-card-layer{
+#works .work-card:hover .work-card-layer{
     opacity: 1;
     transition: 0.5s;
 
 }
 
-.work-card .work-card-layer p{
+#works .work-card .work-card-layer p{
     font-size: 14px;
     letter-spacing: 1px;
     transform: translateY(-15px);
     transition: 0.2s;
 }
 
-.work-card .work-card-layer .work-layer-icon{
+#works .work-card .work-card-layer .work-layer-icon{
     transform: translateY(15px);
     transition: 0.2s;
 
 }
 
-.icon-layer{
+#works .icon-layer{
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -693,36 +695,41 @@ header .span::after {
     transition: 0.5s;
 
 }
-.icon-layer .lay-ico{
+#works .icon-layer .lay-ico{
     font-size: 10px;
     transition: 0.5s;
 }
-.icon-layer:hover{
+
+#works .icon-layer:hover{
     background-color: #fff;
 }
-.icon-layer:hover .lay-ico{
+
+#works .icon-layer:hover .lay-ico{
     color: var(--main-font) !important;
 }
-.work-card:hover .work-card-layer{
+
+#works .work-card:hover .work-card-layer{
     top: 7px;
 }
-.work-card:hover .work-card-layer p{
+
+#works .work-card:hover .work-card-layer p{
     transform: translateY(0);
 
 }
-.work-card:hover .work-layer-icon{
+
+#works .work-card:hover .work-layer-icon{
     transform: translateY(0);
 }
 
 
-.nav-pills .nav-link{
+#works .nav-pills .nav-link{
     color: #222 ;   
-   margin: 8px 16px;
-   padding: 0;
+    margin: 8px 16px;
+    padding: 0;
     font-weight: 700;
     position: relative;
 }
-.nav-pills .nav-link::after{
+#works .nav-pills .nav-link::after{
     content: "";
     display: block;
     width: 0;
@@ -730,17 +737,17 @@ header .span::after {
     background: #000;
     transition: width 0.3s ease-in-out; 
 }
-.nav-pills .nav-link.active{
+#works .nav-pills .nav-link.active{
     color: #222;
     position: relative;
     background-color: transparent;
    
 }
-.nav-pills .nav-link.active::after{
+#works .nav-pills .nav-link.active::after{
     width: 100%;
 
 }
-.fit-content{
+#works .fit-content{
     width: fit-content;
 }
 
