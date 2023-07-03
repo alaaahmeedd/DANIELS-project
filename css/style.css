@@ -16,7 +16,7 @@ body{
 
 
 
-h1, h2,h4 {
+h2,h4 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -173,9 +173,7 @@ header{
 .home-text{
     padding-top: 61px;
 }
-.home-text h1{
-    font-size: 60px !important;
-}
+
 
 .home-text h2{
     font-size: 60px !important;
