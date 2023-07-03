@@ -16,7 +16,7 @@ body{
 
 
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4,h6 {
     font-family: "Montserrat", sans-serif;
 }
 
@@ -76,7 +76,7 @@ a{
 .navbar-expand-lg .navbar-nav .nav-link,.navbar .navbar-brand{
     color: var(--main-color) !important ;
     font-size:14px;
-    /* color:#000; */
+    font-weight: 500;
 }
 
 .navbar .navbar-brand{
@@ -152,13 +152,14 @@ header{
     font-size: 50px
 }
 
-
 #home .hello{
     font-size: 50px;
     font-weight: 800;
     margin-bottom: 10px;
+    color: #FFFFFF;
 
 }
+
 
 #home .soical-media .icon-social i{
     font-size: 14px;
@@ -171,21 +172,23 @@ header{
 
 
 header .animation{
-    margin-right: 200px;
+    margin-right: 250px;
+}
+
+header .static{
+    font-size: 45px;
 }
 
 
 header .span::after {
     content: "";
     position: absolute;
-    font-size: 36px;
+    font-size: 45px;
     translate: 10px 0;
-    padding-top: 10px;
-    /* vertical-align: 20px; */
-    animation-name: typing;
-    animation-duration: 6s;
-    animation-iteration-count: infinite;
+    padding-top: 5px;
+    animation: typing 6s ease-in-out infinite;
     text-align: center;
+    font-weight: 600;
     
 }
 
