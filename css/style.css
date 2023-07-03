@@ -170,7 +170,100 @@ header{
     background: rgba(0, 0, 0, 0.3);
 }
 
+.home-text{
+    padding-top: 61px;
+}
+.home-text h1{
+    font-size: 60px !important;
+}
 
+.home-text h2{
+    font-size: 60px !important;
+    font-weight: 100;
+}
+
+.home-text h2::after{
+    content: "";
+    animation: typing 7s infinite alternate linear ;
+    font-weight: 400;
+}
+@media screen and (max-width: 768px){
+    .home-text h2{
+        font-size: 40px !important;
+    }
+    .home-text h1{
+        font-size: 40px !important;
+    }
+
+}
+@keyframes typing {
+    0%{content:"|"}
+    1%{content:"L|"}
+    2%{content:"La|"}
+    3%{content:"Lar|"}
+    4%{content:"Larr|"}
+    5%{content:"Larry|"}
+    6%{content:"Larry |"}
+    7%{content:"Larry D|"}
+    8%{content:"Larry Da|"}
+    9%{content:"Larry Dan|"}
+    10%{content:"Larry Dani|"}
+    11%{content:"Larry Danie|"}
+    12%{content:"Larry Daniel|"}
+    13%{content:"Larry Daniels|"}
+    20%{content:"Larry Daniel|"}
+    21%{content:"Larry Danie|"}
+    22%{content:"Larry Dani|"}
+    23%{content:"Larry Dan|"}
+    24%{content:"Larry Da|"}
+    25%{content:"Larry D|"}
+    26%{content:"Larry |"}
+    27%{content:"Larry|"}
+    28%{content:"Larr|"}
+    29%{content:"Lar|"}
+    30%{content:"La|"}
+    31%{content:"L|"}
+    32%{content:"|"}
+    39%{content:"D|"}
+    40%{content:"De|"}
+    40%{content:"Dev|"}
+    42%{content:"Deve|"}
+    43%{content:"Devel|"}
+    44%{content:"Develo|"}
+    45%{content:"Develop|"}
+    46%{content:"Develope|"}
+    47%{content:"Developer|"}
+    54%{content:"Develope|"}
+    55%{content:"Develop|"}
+    56%{content:"Develo|"}
+    57%{content:"Devel|"}
+    58%{content:"Deve|"}
+    59%{content:"Dev|"}
+    60%{content:"De|"}
+    61%{content:"D|"}
+    62%{content:"|"}
+    69%{content:"D|"}
+    70%{content:"De|"}
+    71%{content:"Des|"}
+    72%{content:"Desi|"}
+    73%{content:"Desig|"}
+    74%{content:"Design|"}
+    75%{content:"Designe|"}
+    76%{content:"Designer|"}
+    83%{content:"Designe|"}
+    84%{content:"Design|"}
+    885%{content:"Desig|"}
+    86%{content:"Desi|"}
+    87%{content:"Des|"}
+    88%{content:"De|"}
+    89%{content:"D|"}
+    100%{content:"|"}
+       
+    
+}
+
+
+/* 
 header .animation{
     margin-right: 150px;
 }
@@ -190,7 +283,7 @@ header .span::after {
     text-align: center;
     font-weight: 600;
     
-}
+} */
 
 #home .soical-media{
     margin-top: 50px;
@@ -203,7 +296,7 @@ header .span::after {
     transition: all 500ms ease;
 
 }
-
+/* 
 
 @keyframes typing {
     
@@ -482,7 +575,7 @@ header .span::after {
         content: " |";
     }
 
-} 
+}  */
 
 /* end header */
 
