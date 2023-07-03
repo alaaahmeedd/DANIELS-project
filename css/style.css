@@ -37,7 +37,7 @@ a{
 }
 
 #services h3,
-#portfolio h3,
+#works h3,
 #testimonial h3,
 #team h3,
 #contact h3
@@ -51,7 +51,7 @@ a{
 }
 
 #services h3::after,
-#portfolio h3::after,
+#works h3::after,
 #testimonial h3::after,
 #team h3::after,
 #contact h3::after
@@ -172,18 +172,18 @@ header{
 
 
 header .animation{
-    margin-right: 250px;
+    margin-right: 240px;
 }
 
 header .static{
-    font-size: 45px;
+    font-size: 43px;
 }
 
 
 header .span::after {
     content: "";
     position: absolute;
-    font-size: 45px;
+    font-size: 43px;
     translate: 10px 0;
     padding-top: 5px;
     animation: typing 6s ease-in-out infinite;
@@ -577,7 +577,7 @@ header .span::after {
     border-radius: 5px;
     text-align: center;
 
-  
+
   }
   
   .icon-circle {
@@ -619,113 +619,132 @@ header .span::after {
 }
 
 /* style portfolio */
-#portfolio{
-    overflow: hidden;
+
+.work-sec h2{
+    font-size: 40px;
+    color: var(--header-font);
+    position: relative;
+    width: fit-content;
+    margin: 35px auto;
+    z-index: 53;
+    padding: 0 !important;
 }
-#portfolio .nav-underline {
-    border:0;
-    /* display: flex; */
-}
-#portfolio  .nav-link{
-    border: 0;
-}
-
-/* #portfolio .nav-tabs{
-    border: 0;
-} */
-
-/* #portfolio .nav-item .nav-link:focus {
-    outline: none;
-    box-shadow: none;
-  } */
-
-  #portfolio ul li .nav-link {
-    background-color: white;
-  }
-
-
-
-#portfolio .item {
-    padding: 0 15px;
-    margin-bottom: 30px;
-}
-
-#portfolio .item-img-overlay {
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    background-color: rgba(255, 255, 255, 0.95);
-    opacity: 0;
-    transition: all 0.5s;
-    z-index: 2;
-    transform: translateY(10px);
-}
-
-#portfolio .overlay-info {
+.work-sec h2::before{
+    content: "";
     position: absolute;
     width: 100%;
+    height: 50%;
+    background-image: url(../images/dots.png);
+    background-repeat: repeat;
     top: 50%;
     left: 0;
-    transform: translate(0%, -50%);
+    z-index: -55;
 }
 
-#portfolio .item-img h6 {
-    font-size: 12px;
-    font-weight: 700;
-    letter-spacing: 2px;
+.work-sec h2::after{
+    content: ".";
+}
+
+.work-card{
     position: relative;
-    margin-bottom: 15px;
-    transform: translateY(-15px);
-    transition: all 0.5s;
+   
 }
 
-#portfolio .item-img .item-img-icon i {
-    display: inline-block;
+.work-card .work-card-layer{
+    position: absolute;
+    top: 17px;
+    left: 7px;
+    right: 7px;
+    bottom:7px;
+    background-color: #fdfdfd;
+    z-index: 555;
+    transition: all 0.2s;
+    opacity: 0;
+}
+
+.work-card:hover .work-card-layer{
+    opacity: 1;
+    transition: 0.5s;
+
+}
+
+.work-card .work-card-layer p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    transform: translateY(-15px);
+    transition: 0.2s;
+}
+
+.work-card .work-card-layer .work-layer-icon{
+    transform: translateY(15px);
+    transition: 0.2s;
+
+}
+
+.icon-layer{
     width: 30px;
     height: 30px;
-    line-height: 28px;
     border-radius: 50%;
-    border: 1px solid #111;
-    background-color: #111;
-    color: #eee;
-}
+    background-color: #1c1c1c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
 
-#portfolio .item-img:hover .item-img-overlay {
-    opacity: 1;
+}
+.icon-layer .lay-ico{
+    font-size: 10px;
+    transition: 0.5s;
+}
+.icon-layer:hover{
+    background-color: #fff;
+}
+.icon-layer:hover .lay-ico{
+    color: var(--main-font) !important;
+}
+.work-card:hover .work-card-layer{
+    top: 7px;
+}
+.work-card:hover .work-card-layer p{
+    transform: translateY(0);
+
+}
+.work-card:hover .work-layer-icon{
     transform: translateY(0);
 }
-/* 
-#portfolio .nav-link{
-    margin: 0 5px;
-    color: #222;
+
+
+.nav-pills .nav-link{
+    color: #222 ;   
+   margin: 8px 16px;
+   padding: 0;
     font-weight: 700;
-    font-size: 16px;
-    cursor: pointer;
     position: relative;
-    z-index: 2;
 }
-
-#portfolio .nav-link:before {
+.nav-pills .nav-link::after{
     content: "";
-    width: 30px;
+    display: block;
+    width: 0;
     height: 2px;
-    background: #111;
-    position: absolute;
-    left: 0;
-    bottom: -5px;
-    transition: all 0.4s;
-    z-index: -1;
+    background: #000;
+    transition: width 0.3s ease-in-out; 
+}
+.nav-pills .nav-link.active{
+    color: #222;
+    position: relative;
+    background-color: transparent;
+   
+}
+.nav-pills .nav-link.active::after{
+    width: 100%;
+
+}
+.fit-content{
+    width: fit-content;
 }
 
-#portfolio .active:before {
-    width: 95%;
-}
 
-#portfolio .nav-tabs{
-    margin-bottom: 50px !important;
-} */
 
 /* start testimonials */
 
@@ -756,11 +775,11 @@ header .span::after {
 }
 
 #testimonial h6 {
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     margin: 30px 0 5px;
     color: #333333;
-    font-family: "Montserrat", sans-serif;
+    /* font-family: "Montserrat", sans-serif; */
 }
 
 #testimonial .card-inner {
@@ -773,10 +792,9 @@ header .span::after {
 }
 
 #testimonial .carousel-item span {
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 600;
     color: #888;
-    /* margin-bottom: 50px; */
     letter-spacing: 0.4px;
     padding-top: 30px;
 }
@@ -936,9 +954,9 @@ header .span::after {
     margin: 0;
     font-size: 15px;
     color: #748182;
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.3px;
-    font-family: "Poppins", sans-serif;
+
 }
 
 #contact .input{
@@ -971,14 +989,15 @@ header .span::after {
     line-height: 1.6;
     margin: 0;
     color: #748182;
-    /* font-family: "Poppins", sans-serif; */
 }
-
-
 
 #footer .credits{
     cursor: pointer;
   
+  }
+
+  #footer .credits span{
+    color:darksalmon;
   }
 
 
